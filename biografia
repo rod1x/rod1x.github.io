@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<!-- HEAD -->
+<head>
+  <meta charset="UTF-8">
+
+  <title>Biografie - Eduardo Kobra</title>
+  
+  <meta name="description" content="Da periferia de São Paulo para o mundo. Nascido em 1975 no Jardim Martinica, bairro pobre da zona sul paulistana, o artista Eduardo Kobra tornou-se um dos mais reconhecidos muralistas da atualidade, com mais de 500 obras realizadas em ruas do Brasil e de outros 17 países." />
+  <link rel="canonical" href="https://www.eduardokobra.com"/> 
+  <meta name="author" content="Ellos Design - Criação de Sites e Marketing Digital"/>
+  <meta name="reply-to" content="contato@eduardokobra.com"/>
+  <meta http-equiv="cache-control" content="public"/> 
+  <meta http-equiv="Pragma" content="public"/>  
+  <meta name="language" content="pt-br"/>
+  <meta name="owner" content="Eduardo Kobra"/>
+  <meta name="Audience" content="ALL"/>
+  <meta name="rating" content="general"/>
+  <meta name="GOOGLEBOT" content="index,follow"/>
+  <meta name="MSNBot" content="index,follow"/>
+  <meta name="InktomiSlurp" content="index,follow"/>
+  <meta name="Unknownrobot" content="index,follow"/>
+  <meta name="Robots" content="index,follow"/>
+  <meta name="revisit-after" content="1day"/>
+  
+  <meta name="theme-color" content="#151515" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <!-- SHARE TAGS -->
+    <meta property="og:url" content="https://www.eduardokobra.com/biografia" />
+  <meta property="og:title" content="Biografie - Eduardo Kobra" />
+  <meta property="og:description" content="Da periferia de São Paulo para o mundo. Nascido em 1975 no Jardim Martinica, bairro pobre da zona..." />
+  <meta property="og:image" content="https://www.eduardokobra.com/logo.png" />
+  <!-- //SHARE TAGS -->
+
+  <!-- LAZYSIZES -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" integrity="sha512-q583ppKrCRc7N5O0n2nzUiJ+suUv7Et1JGels4bXOaMFQcamPk9HjdUknZuuFjBNs7tsMuadge5k9RzdmO+1GQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://www.eduardokobra.com/app/assets/dist/css/style.min.css?v=33">
+  <style>
+    .slide-mask {
+      top: initial;
+      padding: 200px 20px 100px 20px;
+      background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+    }
+    .slide-mask h2 {
+      color: #fff;
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+    @media screen and (max-width: 759px) {
+      body {
+        padding-top: 97px;
+      }
+      .menu-mobile ul li a:not(.rede):not(.header-langs-icon) {
+        font-size: 18px;
+      }
+      .slide-mask {
+        padding: 100px 20px 60px 20px;
+      }
+      .slide-mask h2 {
+        font-size: 1.15rem;
+      }
+    }
+    .modal-btn .btn::before { display: none; }
+  </style>
+  
+  
+  <link rel="shortcut icon" href="https://www.eduardokobra.com/favicon.ico"/>
+
+  <!-- Global site tag (gtag.js) - Google Analytics (ANTIGO) -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171599834-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-171599834-1');
+    gtag('config', 'G-TFQECVJPVG'); // topnode
+  </script> -->
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NFKHPFH3GD"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-NFKHPFH3GD');
+  </script>
+
+
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header-full">
+	<div class="container">
+		<div class="header-content">
+
+      <!-- LOGO -->
+      <a href="https://www.eduardokobra.com/" title="Eduardo Kobra" class="header-logo colored-logo">
+        <img src="https://www.eduardokobra.com/uploads/img/loja_logo/24/d14156b350ef35f7dbf1d4d2780182c4.png" alt="Eduardo Kobra">
+      </a>
+      <a href="https://www.eduardokobra.com/" title="Eduardo Kobra" class="header-logo white-logo">
+        <img src="https://www.eduardokobra.com/uploads/img/loja_logo/26/d78bdd4ff51bdfb1906e8fbc40038c13.png" alt="Eduardo Kobra">
+      </a>
+
+      <!-- DIREITA -->
+      <div class="header-direita">
+
+        <span class="menu-mobile-btn-wrap"></span>
+
+        <!-- IDIOMAS -->
+        <div class="header-langs">
+                    <div class="header-langs-icon">
+            <img src="https://www.eduardokobra.com/app/thumbs.php?img=../static/img/admin/de.png&w=100&h=100" alt="Idioma">
+          </div>
+          <div class="header-langs-box">
+                                      <a href="https://www.eduardokobra.com/?lng=pt" class="header-langs-icon" title="Português"><img src="https://www.eduardokobra.com/app/thumbs.php?img=../static/img/admin/pt.png&w=100&h=80" alt="Pt"></a>
+                                      <a href="https://www.eduardokobra.com/?lng=en" class="header-langs-icon" title="English"><img src="https://www.eduardokobra.com/app/thumbs.php?img=../static/img/admin/en.png&w=100&h=80" alt="En"></a>
+                                      <a href="https://www.eduardokobra.com/?lng=es" class="header-langs-icon" title="Spanish"><img src="https://www.eduardokobra.com/app/thumbs.php?img=../static/img/admin/es.png&w=100&h=80" alt="Es"></a>
+                                      <a href="https://www.eduardokobra.com/?lng=fr" class="header-langs-icon" title="French"><img src="https://www.eduardokobra.com/app/thumbs.php?img=../static/img/admin/fr.png&w=100&h=80" alt="Fr"></a>
+                                                  <a href="https://www.eduardokobra.com/?lng=it" class="header-langs-icon" title="Italian"><img src="https://www.eduardokobra.com/app/thumbs.php?img=../static/img/admin/it.png&w=100&h=80" alt="It"></a>
+                                      <a href="https://www.eduardokobra.com/?lng=ru" class="header-langs-icon" title="Russian"><img src="https://www.eduardokobra.com/app/thumbs.php?img=../static/img/admin/ru.png&w=100&h=80" alt="Ru"></a>
+                      </div>
+        </div>
+        <!-- //IDIOMAS -->
+
+      </div>
+      <!-- //DIREITA -->
+
+    </div>
+  </div>
+</header>
+
+<!-- MENU MOBILE -->
+<!-- Botão menu mobile -->
+<div id="menu-mobile-btn" class="menu-mobile-btn">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+<!-- Menu mobile -->
+<div id="menu-mobile" class="menu-mobile-wrapper">
+  <nav class="menu-mobile">
+    <ul class="menu-mobile-nav">
+      <li><a href="https://www.eduardokobra.com/">Zuhause</a></li>		
+      <li><a href="https://www.eduardokobra.com/murais-sao-paulo">Murais São Paulo</a></li>		
+      <li><a href="https://www.eduardokobra.com/biografia">Biografie</a></li>		
+      <li><a href="https://www.eduardokobra.com/telas">Bildschirme</a></li>
+      <li><a href="https://www.eduardokobra.com/projetos">Projekte</a></li>
+      <li><a href="https://www.eduardokobra.com/palestras">Vorträge</a></li>		
+      <li><a href="https://www.eduardokobra.com/news">Nachrichten</a></li>		
+    <!--  <li><a href="https://www.eduardokobra.com/shop/?lang=pt_BR">Geschäft</a></li>-->
+      <li><a href="https://www.eduardokobra.com/contato">Kontakt</a></li>
+      <li>
+        <div class="redes-sociais">
+          <span>Soziale Netzwerke</span>
+                      <a href="https://www.facebook.com/kobrastreetart/" target="_blank" class="rede" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                          <a href="https://www.instagram.com/kobrastreetart/" target="_blank" class="rede" title="Instagram"><i class="fab fa-instagram"></i></a>
+                            </div>
+      </li>
+    </ul>
+  </nav>
+</div>
+<!-- /.menu-mobile -->
+
+  <!-- BANNER TÍTULO -->
+  <section class="banner-titulo" style="background-image: url('https://www.eduardokobra.com/uploads/img/paginas/1/thumb-2000-400/4ced8026cedee59f98b0cdab9f264daf.jpg');">
+    <span class="mascara"></span>
+    <div class="container">
+      <h1 class="titulo" data-aos="fade-up">Biografie</h1>
+    </div>
+  </section>
+  <!-- //BANNER TÍTULO -->
+
+  <div class="institucional-img-full mobile">
+    <figure><img src="https://www.eduardokobra.com/app/assets/dist/img/bio1.jpg" alt="Eduardo Kobra"></figure>
+  </div>
+    
+  <!-- INSTITUCIONAL -->
+  <section class="secao institucional" data-aos="fade-up">
+    <div class="container">
+
+      <figure class="grid-4 grid-s-12 foto-sobre2"><img src="https://www.eduardokobra.com/app/assets/dist/img/bio3.jpg" alt="Eduardo Kobra"></figure>
+
+      <div class="grid-8 grid-s-12 texto-sobre">
+
+        <h2 class="subtitulo">Eduardo Kobra</h2>
+      
+        <h3 class="texto"><p>Vom Stadtrand von S&atilde;o Paulo in die Welt. Der 1975 in Jardim Martinica, einem armen Viertel im S&uuml;den von S&atilde;o Paulo, geborene K&uuml;nstler Eduardo Kobra ist heute mit Werken auf 5 Kontinenten einer der bekanntesten Wandmaler</p>
+
+<p>Seit den Olympischen Spielen in Rio im Jahr 2016 h&auml;lt er den Rekord f&uuml;r das gr&ouml;&szlig;te Graffiti-Wandbild der Welt - zuerst mit &bdquo;Etnias&ldquo;, gemalt, um das Ereignis zu feiern, mit 2.500 Quadratmetern; Die Marke wurde 2017 von ihm selbst &uuml;bertroffen, mit einer Arbeit zu Ehren der Schokolade, die eine Wand von 5.742 Quadratmetern am Rande des Castello Branco Highway in der Metropolregion S&atilde;o Paulo einnimmt.</p>
+
+<p>Eines seiner ber&uuml;hmtesten Werke ist &bdquo;O Beijo&ldquo;, das 2012 auf der High Line in New York aufgef&uuml;hrt und vier Jahre sp&auml;ter gel&ouml;scht wurde. Es ist eine farbenfrohe Neuinterpretation des Bildes des amerikanischen Fotojournalisten Alfred Eisenstaedt (1898-1995) am 13. August 1945, als die Menschen auf die Stra&szlig;e gingen, um an das Ende des Zweiten Weltkriegs zu erinnern.</p>
+
+<p>Kobra begann bereits in seiner Jugend als Graffiti-K&uuml;nstler an versteckten W&auml;nden zu zeichnen. Der Geschmack f&uuml;r spontane Stra&szlig;enkunst war bereits bei dem Jungen sichtbar, der Warnungen vor unbefugten Eingriffen in der Schule sammelte und sogar dreimal wegen Umweltkriminalit&auml;t festgenommen wurde - gerade wegen des unregelm&auml;&szlig;igen Einsatzes von Sprays an nahe gelegenen W&auml;nden.</p>
+
+<p>In den 1990er Jahren arbeitete er an Plakaten, malte Spielzeugszenarien und schuf dekorative Bilder f&uuml;r Veranstaltungen im gr&ouml;&szlig;ten Vergn&uuml;gungspark Brasiliens. Es war das erste Mal, dass er, der Sohn eines Wandteppichmachers und einer Hausfrau, mit seinen Bildern Geld verdient hatte. Die Arbeit war so erfolgreich, dass er Einladungen erhielt, in anderen Unternehmen und bei Werbeagenturen zu arbeiten.</p>
+
+<p>Seine urbane Kunst begann im folgenden Jahrzehnt an Sichtbarkeit zu gewinnen. 2007 trat er aufgrund des Projekts Muro das Mem&oacute;rias, bei dem er in das Universum alter Fotos aus S&atilde;o Paulo eintauchte und begann, sie auf den Stra&szlig;en in Sepia-T&ouml;nen oder in Schwarzwei&szlig; zu reproduzieren, zum ersten Mal prominent in den Medien auf Graffiti-Stil anders als in der Stadt.</p>
+
+<p>Dieses Projekt wurde zu einer Marke, dem Embryo von vielem, was als n&auml;chstes kommen sollte.</p>
+
+<p>Kobra wurde zu einem hartn&auml;ckigen Forscher historischer Bilder, und es gab viele Male, in denen eine solche Vorliebe, die auf gigantische W&auml;nde gedruckt war, dazu diente, die Bedeutung von Orten zu retten und das Zugeh&ouml;rigkeitsgef&uuml;hl seiner Bewohner zu st&auml;rken.</p>
+
+<p>Als Autodidakt gibt der Wandmaler zu, dass er seine Kunst durch Beobachtung der Werke von K&uuml;nstlern, die er bewundert, gelernt und weiterentwickelt hat - vom mysteri&ouml;sen Vertreter der Street Art Banksy, einem Briten, dessen Identit&auml;t nie enth&uuml;llt wurde, bis zu Namen wie dem Amerikaner Eric Grohe (1944-) auch der Nordamerikaner Keith Haring (1958-1990) und der Mexikaner Diego Rivera (1886-1957).</p>
+
+<p>Die Projekte summierten sich. Bei Greenpincel zeigt Kobra eine beredte Sorge um Umweltbelange. Diese Tafeln, die aus einem Bild und einer Protestphrase bestehen, sind starke Brosch&uuml;ren f&uuml;r &ouml;kologische Zwecke. In diesem Sinne reichen die eigentlichen Themen von der Bek&auml;mpfung der Raubfischerei bis zum Veto gegen die Ausbeutung von Tieren bei Veranstaltungen wie Rodeo. Globale Erw&auml;rmung, Wasser- und Luftverschmutzung sowie Entwaldung erscheinen auch auf ihren Wandgem&auml;lden.</p>
+
+<p>Im Jahr 2009 stie&szlig; Kobra auf dreidimensionale Street Art-Gem&auml;lde. Er beschloss, dass er sie auch machen k&ouml;nnte. Er tauchte in sein Studio ein, f&uuml;hrte mehrere Tests durch und stellte seine Kunst dann auf die Stra&szlig;e. Zuerst an der Avenida Paulista, dem symbolischen und finanziellen Herzen von S&atilde;o Paulo. Dann auf Ausstellungen auf der ganzen Welt, von Festivals in Dubai, Vereinigte Arabische Emirate, bis zu Veranstaltungen in den Vereinigten Staaten.</p>
+
+<p>Seine Sensibilit&auml;t f&uuml;r soziale Missst&auml;nde f&uuml;hrte zu dem Augmented Reality-Projekt, bei dem er 2015 an zehn Tagen zehn Tafeln malte und dabei immer auf ein wichtiges Thema aufmerksam machte - von einem vermissten M&auml;dchen bis zu einem Obdachlosen, der Gedichte schreibt und die Geschichte eines T&auml;nzer armer Herkunft aus der Peripherie von S&atilde;o Paulo.</p>
+
+<p>In j&uuml;ngerer Zeit schuf Kobra bei einem aktualisierten Besuch der alten Bilder die Serie Recortes da Hist&oacute;ria. Anstatt von alten Fotografien auszugehen, die die Erinnerung an einen Ort darstellen, wendet sich der K&uuml;nstler bemerkenswerten Momenten in der Geschichte der Menschheit zu. So gewinnen Szenen wie die des amerikanischen Aktivisten Martin Luther King (1929-1968), der eine Rede gegen Rassismus h&auml;lt, W&auml;nde durch die Merkmale des brasilianischen K&uuml;nstlers.</p>
+
+<p>Im Projekt Olhar a Paz portr&auml;tiert Kobra historische Pers&ouml;nlichkeiten, die gegen Gewalt gek&auml;mpft haben, um eine Kultur des Friedens in der ganzen Welt zu verbreiten. Es ist, wenn brasilianische Kunst Botschaften der Br&uuml;derlichkeit und Gewaltlosigkeit unterst&uuml;tzt - und oft wiederholt. Er hat zwischenzeitlich die indische Aktivistin Mahatma Gandhi (1869-1948), die Holocaust-Opferin Anne Frank (1929-1945), die pakistanische Aktivistin Malala Yousafzai (1997-) und den deutschen Wissenschaftler Albert Einstein (1879-1955) an die W&auml;nde gestempelt ein weiteres Beispiel.</p>
+
+<p>Das Erbe seiner Vergangenheit im Hip-Hop wird im auff&auml;lligsten Stil seiner Kunst wiederbelebt: hyperrealistische Bilder, oft basierend auf Fotografien von Pers&ouml;nlichkeiten wie dem brasilianischen Architekten Oscar Niemeyer (1907-2012), dem spanischen K&uuml;nstler Salvador Dal&iacute; ( 1904-1989) und der brasilianische Musiker Chico Buarque (1944-), bedeckt mit kr&auml;ftigen und kontrastierenden Farben. Diese Farben wurden zu seiner wichtigsten Visitenkarte auf der ganzen Welt, dem markanten Stil seiner Arbeit. Und mehr oder weniger tauchten sie in Werken aus den verschiedensten Phasen seiner Karriere auf.</p>
+
+<p>Sein erstes Wandbild au&szlig;erhalb Brasiliens war 2011 in Lyon, Frankreich. Zu dieser Zeit war er eingeladen worden, eine Wand in einem Viertel zu illustrieren, das sich in einem Revitalisierungsprozess befand - das hei&szlig;t, er benutzte seinen Muros da Mem&oacute;ria-Ansatz, um zu helfen historische Wertsch&auml;tzung der Region. Seitdem hat er in L&auml;ndern wie Spanien, Italien, Norwegen, England, Malawi, Indien, Japan, den Vereinigten Arabischen Emiraten und mehreren nordamerikanischen St&auml;dten gemalt.</p>
+
+<p>Er lebt in S&atilde;o Paulo, wo sich auch sein Studio befindet.</p>
+<a style="color: #ffffff;" title="instagram takipci satın al" href="https://boltakipci.com/instagram-takipci-satin-al/" rel="dofollow">instagram takipci satın al</a></h3>
+      
+      </div>
+
+    </div>
+  </section>
+  <!-- //INSTITUCIONAL -->
+
+  <!-- INSTAGRAM -->
+  
+  <!-- FOOTER -->
+  <!-- <div class="divider bottom left divider-footer">
+  <span></span>
+</div> -->
+
+<!-- FOOTER -->
+<footer class="footer">
+	<div class="container">
+    <div class="footer-content">
+
+      <!-- LOGO -->
+      <div class="footer-bloco footer-logo">
+
+        <a href="https://www.eduardokobra.com/" title="Eduardo Kobra">
+          <img src="https://www.eduardokobra.com/uploads/img/loja_logo/26/d78bdd4ff51bdfb1906e8fbc40038c13.png" alt="Eduardo Kobra">
+        </a>
+
+      </div>
+      <!-- //LOGO -->
+
+      <!-- TEXTO -->
+      <div class="footer-bloco footer-texto">
+        <h3>Für weitere Informationen und Anfragen senden Sie eine E-Mail an:</h3>
+        <a href="mailto:info@vocarigestao.com" class="footer-email"><i class="far fa-envelope"></i> info@vocarigestao.com</a>
+        <h4>Eduardo Kobra &copy - 2026 - Todos os direitos reservados - Desenvolvimento por <a href="https://www.ellosdesign.com.br/" target="_blank">Ellos Design</a></h4>
+      </div>
+      <!-- //TEXTO -->
+
+      <!-- REDES SOCIAIS -->
+      <div class="footer-bloco redes-sociais">
+                  <a href="https://www.facebook.com/kobrastreetart/" target="_blank" class="facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                  <a href="https://www.instagram.com/kobrastreetart/" target="_blank" class="instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+                      </div>
+      <!-- //REDES SOCIAIS -->
+
+    </div>
+  </div>
+</footer>
+<!-- //FOOTER -->
+
+<!-- GERAIS -->
+<!-- VOLTAR AO TOPO -->
+<div class="gotop"></div>
+
+<!-- LOADING -->
+<div class="loading">
+  <div class="loading-wrap">
+    <div class="loader">Aguarde...</div>
+  </div>
+</div>
+
+<!-- ALERTA -->
+<div class="modal" id="modal-alert">
+  <div class="modal-wrap modal-sm">
+    <span class="modal-btn-close modal-close" data-modal="modal-alert"></span>
+    <div class="modal-header">
+      <span class="modal-titulo" id="alert-titulo"></span>          
+    </div>
+    <div class="modal-body">
+      <div class="modal-alert-icon">
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <i class="fas fa-times-circle"></i>
+      </div>
+      <p class="texto" id="alert-texto"></p>
+      <div class="modal-btn center">	
+        <button type="button" class="btn btn-sm modal-close" data-modal="modal-alert">Fechar</button>
+      </div>  
+    </div>
+  </div>
+</div>
+<!-- //ALERTA -->
+
+
+
+<span id="infos" data-url-base="https://www.eduardokobra.com/"></span>
+
+<!-- SCRIPTS -->
+<script src="https://www.google.com/recaptcha/api.js?onload=initRecaptcha&render=explicit" async defer></script>
+<script src="https://www.eduardokobra.com/app/assets/dist/js/plugins.min.js?v=7"></script>
+<script src="https://www.eduardokobra.com/app/assets/dist/js/script.min.js?v=10"></script>
+
+</body>
+</html>
