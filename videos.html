@@ -90,6 +90,11 @@
       width: 56px; height: 56px; border-radius: 50%;
       display: flex; align-items: center; justify-content: center; padding-left: 4px;
     }
+    /* Descrição abaixo de cada vídeo */
+    .yt-desc {
+      margin: 8px 2px 0; font-size: 14px; line-height: 1.4;
+      color: inherit; opacity: .8;
+    }
     .yt-btn-playlist {
       background: #e62117; color: #fff; border: 0; padding: 10px 18px;
       border-radius: 6px; cursor: pointer; margin-bottom: 16px; font-size: 15px;
@@ -467,20 +472,22 @@
 
 <!-- YOUTUBE SCRIPT -->
 <script>
-  // ====== COLE AQUI OS LINKS DOS SEUS VÍDEOS ======
+  // ====== COLE AQUI OS LINKS DOS SEUS VÍDEOS E A DESCRIÇÃO DE CADA UM ======
+  // Formato: { link: "link do vídeo", descricao: "texto abaixo do vídeo" }
+  // (se deixar a descricao vazia ou usar só o link entre aspas, nenhum texto aparece)
   const ytVideos = [
-    "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-	"https://www.youtube.com/shorts/SYQLBVC_Ntg",
-    "https://youtu.be/9bZkp7q19f0",
-	"https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "https://youtu.be/9bZkp7q19f0",
-	"https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "https://youtu.be/9bZkp7q19f0",
-	"https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "https://youtu.be/9bZkp7q19f0",
-	"https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "https://youtu.be/9bZkp7q19f0",
-	"https://www.youtube.com/shorts/uNDvfix2OgU"
+    { link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ", descricao: "Descrição do vídeo 1" },
+    { link: "https://www.youtube.com/shorts/SYQLBVC_Ntg",  descricao: "Descrição do vídeo 2" },
+    { link: "https://youtu.be/9bZkp7q19f0",                descricao: "Descrição do vídeo 3" },
+    { link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ", descricao: "Descrição do vídeo 4" },
+    { link: "https://youtu.be/9bZkp7q19f0",                descricao: "Descrição do vídeo 5" },
+    { link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ", descricao: "Descrição do vídeo 6" },
+    { link: "https://youtu.be/9bZkp7q19f0",                descricao: "Descrição do vídeo 7" },
+    { link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ", descricao: "Descrição do vídeo 8" },
+    { link: "https://youtu.be/9bZkp7q19f0",                descricao: "Descrição do vídeo 9" },
+    { link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ", descricao: "Descrição do vídeo 10" },
+    { link: "https://youtu.be/9bZkp7q19f0",                descricao: "Descrição do vídeo 11" },
+    { link: "https://www.youtube.com/shorts/uNDvfix2OgU",  descricao: "Descrição do vídeo 12" }
     // adicione mais links aqui
   ];
 
@@ -500,15 +507,30 @@
   const ytModal   = document.getElementById("ytModal");
   const ytPlayer  = document.getElementById("ytPlayer");
 
-  ytVideos.forEach(link => {
+  ytVideos.forEach(item => {
+    const link = typeof item === "string" ? item : item.link;
+    const descricao = typeof item === "string" ? "" : (item.descricao || "");
     const id = ytPegarIdVideo(link);
+
+    const wrap = document.createElement("div");
+    wrap.className = "yt-item";
+
     const card = document.createElement("div");
     card.className = "yt-card";
     card.innerHTML = `<img src="https://i.ytimg.com/vi/${id}/hqdefault.jpg" alt="Capa do vídeo" loading="lazy">`;
     card.addEventListener("click", () => ytAbrir(
       `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0`
     ));
-    ytGaleria.appendChild(card);
+    wrap.appendChild(card);
+
+    if (descricao) {
+      const p = document.createElement("p");
+      p.className = "yt-desc";
+      p.textContent = descricao;
+      wrap.appendChild(p);
+    }
+
+    ytGaleria.appendChild(wrap);
   });
 
   document.getElementById("ytBtnPlaylist").addEventListener("click", () => {
