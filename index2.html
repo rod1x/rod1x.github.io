@@ -70,6 +70,41 @@
       }
     }
     .modal-btn .btn::before { display: none; }
+
+    /* ===== YOUTUBE ===== */
+    .yt-galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 16px;
+    }
+    .yt-card {
+      position: relative; cursor: pointer; border-radius: 10px;
+      overflow: hidden; background: #222; transition: transform .2s;
+    }
+    .yt-card:hover { transform: scale(1.03); }
+    .yt-card img { width: 100%; display: block; aspect-ratio: 16/9; object-fit: cover; }
+    .yt-card::after {
+      content: "▶"; position: absolute; top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 28px; color: #fff; background: rgba(0,0,0,.6);
+      width: 56px; height: 56px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center; padding-left: 4px;
+    }
+    .yt-btn-playlist {
+      background: #e62117; color: #fff; border: 0; padding: 10px 18px;
+      border-radius: 6px; cursor: pointer; margin-bottom: 16px; font-size: 15px;
+    }
+    .yt-modal {
+      position: fixed; inset: 0; background: rgba(0,0,0,.85);
+      display: none; align-items: center; justify-content: center; z-index: 99999;
+    }
+    .yt-modal.aberto { display: flex; }
+    .yt-modal-conteudo { position: relative; width: min(900px, 92vw); aspect-ratio: 16/9; }
+    .yt-modal-conteudo iframe { width: 100%; height: 100%; border: 0; border-radius: 10px; }
+    .yt-fechar {
+      position: absolute; top: -40px; right: 0; background: none; border: 0;
+      color: #fff; font-size: 32px; cursor: pointer;
+    }
   </style>
   
   
@@ -347,6 +382,28 @@
   </div>  
 </section>
 
+    <!-- YOUTUBE -->
+    <section class="secao home-youtube">
+      <div class="container">
+
+        <h2 class="titulo" data-aos="fade-up">Vídeos</h2>
+
+        <button class="yt-btn-playlist" id="ytBtnPlaylist">▶ Tocar playlist completa</button>
+
+        <div class="yt-galeria" id="ytGaleria"></div>
+
+      </div>
+    </section>
+
+    <!-- Modal do player YouTube -->
+    <div class="yt-modal" id="ytModal">
+      <div class="yt-modal-conteudo">
+        <button class="yt-fechar" id="ytFechar" aria-label="Fechar">&times;</button>
+        <iframe id="ytPlayer" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+    <!-- //YOUTUBE -->
+
     <!-- INSTAGRAM -->
     
     <!-- FOOTER -->
@@ -430,5 +487,59 @@
 <script src="https://www.google.com/recaptcha/api.js?onload=initRecaptcha&render=explicit" async defer></script>
 <script src="script.js"></script> 
 <script src="script2.js"></script>
+
+<!-- YOUTUBE SCRIPT -->
+<script>
+  // ====== COLE AQUI OS LINKS DOS SEUS VÍDEOS ======
+  const ytVideos = [
+    "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "https://youtu.be/9bZkp7q19f0"
+    // adicione mais links aqui
+  ];
+
+  // ====== LINK DA SUA PLAYLIST ======
+  const ytPlaylist = "https://www.youtube.com/playlist?list=SEU_ID_DA_PLAYLIST";
+
+  function ytPegarIdVideo(url) {
+    const m = url.match(/(?:v=|youtu\.be\/|embed\/|shorts\/)([\w-]{11})/);
+    return m ? m[1] : url;
+  }
+  function ytPegarIdPlaylist(url) {
+    const m = url.match(/[?&]list=([\w-]+)/);
+    return m ? m[1] : url;
+  }
+
+  const ytGaleria = document.getElementById("ytGaleria");
+  const ytModal   = document.getElementById("ytModal");
+  const ytPlayer  = document.getElementById("ytPlayer");
+
+  ytVideos.forEach(link => {
+    const id = ytPegarIdVideo(link);
+    const card = document.createElement("div");
+    card.className = "yt-card";
+    card.innerHTML = `<img src="https://i.ytimg.com/vi/${id}/hqdefault.jpg" alt="Capa do vídeo" loading="lazy">`;
+    card.addEventListener("click", () => ytAbrir(
+      `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0`
+    ));
+    ytGaleria.appendChild(card);
+  });
+
+  document.getElementById("ytBtnPlaylist").addEventListener("click", () => {
+    ytAbrir(`https://www.youtube-nocookie.com/embed/videoseries?list=${ytPegarIdPlaylist(ytPlaylist)}&autoplay=1`);
+  });
+
+  function ytAbrir(src) {
+    ytPlayer.src = src;
+    ytModal.classList.add("aberto");
+  }
+  function ytFechar() {
+    ytModal.classList.remove("aberto");
+    ytPlayer.src = "";
+  }
+
+  document.getElementById("ytFechar").addEventListener("click", ytFechar);
+  ytModal.addEventListener("click", e => { if (e.target === ytModal) ytFechar(); });
+  document.addEventListener("keydown", e => { if (e.key === "Escape") ytFechar(); });
+</script>
 </body>
 </html>
