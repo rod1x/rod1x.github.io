@@ -105,6 +105,15 @@
       position: absolute; top: -40px; right: 0; background: none; border: 0;
       color: #fff; font-size: 32px; cursor: pointer;
     }
+    /* YouTube: tela cheia apenas no mobile */
+    @media screen and (max-width: 759px) {
+      .yt-modal-conteudo { width: 100vw; height: 100vh; height: 100dvh; aspect-ratio: auto; }
+      .yt-modal-conteudo iframe { border-radius: 0; }
+      .yt-fechar {
+        top: 10px; right: 10px; z-index: 2; width: 40px; height: 40px;
+        font-size: 26px; line-height: 1; border-radius: 50%; background: rgba(0,0,0,.6);
+      }
+    }
   </style>
   
   
@@ -504,14 +513,29 @@
     ytAbrir(`https://www.youtube-nocookie.com/embed/videoseries?list=${ytPegarIdPlaylist(ytPlaylist)}&autoplay=1`);
   });
 
+  let ytFSMobile = false;
+
   function ytAbrir(src) {
     ytPlayer.src = src;
     ytModal.classList.add("aberto");
+    // Tela cheia apenas no mobile
+    if (window.matchMedia("(max-width: 759px)").matches && ytModal.requestFullscreen) {
+      ytModal.requestFullscreen().then(() => { ytFSMobile = true; }).catch(() => {});
+    }
   }
   function ytFechar() {
     ytModal.classList.remove("aberto");
     ytPlayer.src = "";
+    ytFSMobile = false;
+    if (document.fullscreenElement && document.exitFullscreen) {
+      document.exitFullscreen().catch(() => {});
+    }
   }
+
+  // Se o usuário sair da tela cheia no mobile (botão voltar/gesto), fecha o modal
+  document.addEventListener("fullscreenchange", () => {
+    if (ytFSMobile && !document.fullscreenElement) ytFechar();
+  });
 
   document.getElementById("ytFechar").addEventListener("click", ytFechar);
   ytModal.addEventListener("click", e => { if (e.target === ytModal) ytFechar(); });
