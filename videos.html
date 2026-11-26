@@ -129,22 +129,61 @@
       }
     }
   </style>
-  
-  
-  <link rel="shortcut icon" href="images/Logo1.png"/>
+ <!-- CSS -->
+  <link rel="stylesheet" href="https://www.eduardokobra.com/app/assets/dist/css/style.min.css?v=33">
+  <style>
+    .slide-mask {
+      top: initial;
+      padding: 200px 20px 100px 20px;
+      background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+    }
+    .slide-mask h2 {
+      color: #fff;
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+    @media screen and (max-width: 759px) {
+      body {
+        padding-top: 97px;
+      }
+      .menu-mobile ul li a:not(.rede):not(.header-langs-icon) {
+        font-size: 18px;
+      }
+      .slide-mask {
+        padding: 100px 20px 60px 20px;
+      }
+      .slide-mask h2 {
+        font-size: 1.15rem;
+      }
+    }
+    .modal-btn .btn::before { display: none; }
 
-  <!-- Global site tag (gtag.js) - Google Analytics (ANTIGO) -->
-  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171599834-1"></script>
+    /* Espaço no topo do título Biografia (abaixo da faixa do logo/menu) */
+    .banner-titulo {
+      height: auto !important;
+      padding-top: 180px !important;
+      padding-bottom: 60px !important;
+    }
+    /* Tablet */
+    @media screen and (max-width: 1024px) {
+      .banner-titulo { padding-top: 230px !important; }
+    }
+    /* Mobile */
+    @media screen and (max-width: 759px) {
+      .banner-titulo { padding-top: 170px !important; }
+    }
+  </style>
+  
+  
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NFKHPFH3GD"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', 'UA-171599834-1');
-    gtag('config', 'G-TFQECVJPVG'); // topnode
-  </script> -->
-
-
+    gtag('config', 'G-NFKHPFH3GD');
+  </script>
 
 
 </head>
@@ -238,26 +277,14 @@
 </div>
 <!-- /.menu-mobile -->
 
-   
-
-<!-- <div class="divider bottom right">
-  <span></span>
-</div> -->
-
-<!-- OBS: Utilize a estrutura abaixo quando for necessário que o banner respeite um tamanho estabelecido. -->
-
-<!-- 
-<a class="slide-item-auto" href="#" >
-	<div class="slide-image">
-		<img src="https://www.eduardokobra.com/uploads/img/slide/22/thumb-2000-700/3143661e1e09ee1c65825d84d2537fd2.jpg" alt="Banner">
-	</div>
-	<span class="slide-mask">
-		<div class="slide-content slide-fadeInUp">
-            		</div>			
-	</span>
-</a> -->
-
-    <!-- SOBRE -->
+  <!-- BANNER TÍTULO -->
+  <section class="banner-titulo" style="background-image: url('images/Bull.png');">
+    <span class="mascara"></span>
+    <div class="container">
+      <h1 class="titulo" data-aos="fade-up">Biografia</h1>
+    </div>
+  </section>
+  <!-- //BANNER TÍTULO -->
     
 
         
